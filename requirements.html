@@ -4,24 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Requirements</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
+  <div class="container">
   <h1>Requirements</h1>
   <br>
-  
+
   <h2>Requirements in priority order</h2>
   <ul>
     <li>
       Interactive "wallchart" front-end web application that pulls project
-      information from a project database and displays it accurately. Users 
-      can create project elements of three separate project types and edit 
+      information from a project database and displays it accurately. Users
+      can create project elements of three separate project types and edit
       their information and column on the chart.
       <p style="font-style:italic;">(essential)</p>
     </li>
     <br>
     <li>
-      The front-end sends user submitted changes to back-end which then 
+      The front-end sends user submitted changes to back-end which then
       updates the database and changes the information displayed to
       all users. The database will include all information about each
       project including the title, description, stage/status, etc.
@@ -29,7 +31,7 @@
     </li>
     <br>
     <li>
-      Users can create accounts with display names to edit projects. The 
+      Users can create accounts with display names to edit projects. The
       application should show who updated what.
       <p style="font-style:italic;">(essential)</p>
     </li>
@@ -42,15 +44,38 @@
       <p style="font-style:italic;">(stretch)</p>
     </li>
   </ul><br>
-  
+
   <h2>Effort and Size Estimation</h2>
     <p>To be finished...</p><br>
-    
+
   <h2>Schedule and Milestones</h2>
     <p>To be finished...</p><br>
-  
-  <h2>Platforms, Tools, and Languages</h2>
-    <p>To be finished...</p><br>
 
+  <h2>Platforms, Tools, and Languages</h2>
+    <h3>Summary:</h3>
+    <p>
+      Wallchart Tool is being built as a Single Page Application (SPA) with a MEVN stack (MongoDB, Express, Vue.js, Node.js). In the front-end, the user interface will be built with Vue.js. In the back-end, a Node server will not only serve the Vue app for users to access with a web browser, but also host an Express API. When the Vue app makes any requests to the server via this API, we can apply any necessary CRUD operations to the data we are storing in MongoDB. MongoDB is a NoSQL database service, which allows us to store and retrieve items without needing to specify a schema.
+    </p>
+    <p>
+      To package our web app, we are using Browserify. This allows us to use any of countless available javascript modules installed via npm (Node package manager).
+    </p>
+    <h5>Packages Used:</h5>
+    <ul>
+      <li>Axios: to facilitate sending requests from the front-end to the back-end</li>
+      <li>
+        Socket.io: to implement real-time updates on the page as changes are made to the server. This package will allow the server to emit events when data is changed that the front-end will catch and handle appropriately.
+      </li>
+      <li>
+        Jsonwebtoken: to handle user authentication and eliminate the need for sessions.
+      </li>
+    </ul>
+
+    <h3>Languages:</h3>
+    <p>
+      Because we are using Node.js for our server and Vue.js to create the interface for our web app, we can use Javascript for the front-end and back-end. Handy!
+    </p>
+
+    <br>
+  </div>
 </body>
 </html>
