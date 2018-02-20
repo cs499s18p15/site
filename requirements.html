@@ -14,29 +14,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.js'></script>
 
 
-  <script>
-    $(document).ready(function() {
-      // page is now ready, initialize the calendar...
-      $('#calendar').fullCalendar({
-        // put your options and callbacks here
-        events: [
-            {
-                title  : 'Calendar created',
-                start  : '2018-02-19'
-            },
-            {
-                title  : 'Scrum Meeting',
-                start  : '2018-02-22'
-            },
-            {
-                title  : 'Long event',
-                start  : '2018-02-26',
-                end: '2018-02-28'
-            }
-          ]
-      })
-    });
-  </script>
+
 
 </head>
 <body>
@@ -110,8 +88,32 @@
     <p>* Milestone 6:(March 8th - March 9th) Learn from user testing on site and evaluate any remianing or new criteria.<p><br>
     <p>* Milestone 7: Make necessary pivots and update our Schedule.<p><br>
 
-  <div id="calendar">
 
+      <script>
+        $(document).ready(function() {
+          // page is now ready, initialize the calendar...
+          $('#calendar').fullCalendar({
+            // put your options and callbacks here
+            events: [
+                {
+                    title  : 'Calendar created',
+                    start  : '2018-02-19'
+                },
+                {
+                    title  : 'Scrum Meeting',
+                    start  : '2018-02-22'
+                },
+                {
+                    title  : 'Long event',
+                    start  : '2018-02-26',
+                    end: '2018-02-28'
+                }
+              ]
+          })
+        });
+      </script>
+  <div id="calendar">
+    <!-- ^^^ events in the calendar are added above ^^^ -->
   </div>
   <br><br><br>
 
