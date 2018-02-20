@@ -6,6 +6,38 @@
   <title>Requirements</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css"></link>
+
+  <!-- necessary imports for calendar -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.css' />
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.js'></script>
+
+
+  <script>
+    $(document).ready(function() {
+      // page is now ready, initialize the calendar...
+      $('#calendar').fullCalendar({
+        // put your options and callbacks here
+        events: [
+            {
+                title  : 'Calendar created',
+                start  : '2018-02-19'
+            },
+            {
+                title  : 'Scrum Meeting',
+                start  : '2018-02-22'
+            },
+            {
+                title  : 'Long event',
+                start  : '2018-02-26',
+                end: '2018-02-28'
+            }
+          ]
+      })
+    });
+  </script>
+
 </head>
 <body>
   <div class="container">
@@ -71,6 +103,12 @@
 
   <h2>Schedule and Milestones</h2>
     <p>To be finished...</p><br>
+
+
+  <div id="calendar">
+
+  </div>
+  <br><br><br>
 
   <h2>Platforms, Tools, and Languages</h2>
     <h3>Summary:</h3>
