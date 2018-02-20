@@ -2,110 +2,36 @@ h2 {
   text-align: center;
 }
 
-#page {
-  display: grid;
-  grid-template-rows: 150px 1fr;
-  grid-template-columns: 150px 1fr;
-  grid-gap: 5px;
-
-  grid-template-areas:  "title title"
-                        "nav content"
-}
-
-@media only screen and (max-width: 500px) { /* mobile display */
-  #page {
-    grid-template-areas: "title" "nav" "content";
-    grid-template-rows: 150px 1fr;
-    grid-template-columns: 1fr;
-  }
-  h1 {
-    font-size: 24px;
-  }
-}
-@media only screen and (min-width: 500px) { /* desktop display */
-  #page {
-    grid-template-areas: "title title" "nav content";
-    grid-template-rows: 150px 1fr;
-    grid-template-columns: 150px 1fr;
-  }
-}
-
-#nav h2 {
-  font-size: 1.3em;
+#title h1 {
   text-align: center;
-  margin: 5px 0px 5px 0px;
-}
-#nav a {
-  font-weight: bold;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 0.9em;
-  padding-top: 4px;
-  padding-left: 15px;
-  margin: 3px;
-  color: white;
-  background-color: rgb(87, 137, 203);
-  height: 20px;
-  border-radius: 5px;
-
+  margin: 8px;
 }
 
+#demo {
 
-#title {
-  grid-area: title
-}
-#nav {
-  padding: 2px;
-  grid-area: nav;
-
-  box-shadow: 0px 2px 4px rgba(88, 88, 88, 0.5);
-}
-#content {
-  text-align: center;
-  padding: 5px;
-  grid-area: content;
-
-  box-shadow: 2px 2px 4px rgba(88, 88, 88, 0.5);
-}
-
-#nav a {
-  display: block;
-}
-
-#Toyota {
-  font-size: 4.5em;
-  font-family: sans-serif;
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-#ScrumTools {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 2.4em;
-  font-family: sans-serif;
 }
 
 .center-image {
   text-align: center;
-  width: 75%;
-  max-width: 500px;
-  overflow: hidden;
+}
+.center-image img {
+  width: 100%;
+  max-width: 600px;
 }
 
 .team-member {
   text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  height: 200px;
-  width: 200px;
   background-color: rgb(226, 226, 226);
 }
 .team-member h3 {
+  font-size: 1em;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 .team-member img {
   height: 100px;
   width: 100px;
+}
+.team-member p {
+  font-size: 0.8em;
 }

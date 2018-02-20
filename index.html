@@ -2,69 +2,123 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>CS499 Group 15</title>
 		<link rel="stylesheet" href="style.css"></link>
 		<link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple" rel="stylesheet">
 
+		<!-- necessary bootstrap imports -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	</head>
 	<body>
-		<div id="page">
-			<div id="title">
-				<!-- <img id="Toyota" class="center-image" src="toyota2.png"></img> -->
-				<h2 id="Toyota">TOYOTA</h2>
-				<h2 id="ScrumTools" class="font-effect-shadow-multiple">ScrumTools</h2>
+		<div id="title">
+			<h1>Toyota Scrum Tools: Wallchart</h1>
+		</div>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(59, 70, 111);">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<!-- nav links go in here! -->
+					<li class="nav-item active">
+      			<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="intro.html">Introduction</a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="requirements.html">Requirements</a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="design.html">Design</a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="screens.html">Screens</a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="scenarios.html">Scenarios</a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="testing.html">Testing</a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="considerations.html">Considerations</a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="conclusions.html">Conclusions</a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="installation.html">Installation</a>
+    			</li>
+					<li class="nav-item">
+      			<a class="nav-link" href="references.html">References</a>
+    			</li>
+				</ul>
 			</div>
-			<div id="nav">
-				<h2>Navigation</h2>
-				<a href="index.html">Home</a>
-				<a href="intro.html">Introduction</a>
-				<a href="requirements.html">Requirements</a>
-				<a href="design.html">Design</a>
-				<a href="screens.html">Screens</a>
-				<a href="scenarios.html">User Scenarios</a>
-				<a href="testing.html">Testing</a>
-				<a href="considerations.html">Considerations</a>
-				<a href="conclusions.html">Conclusions</a>
-				<a href="installation.html">Installation</a>
-				<a href="references.html">References</a>
+		</nav>
 
+		<div class="container">
+			<br>
+			<h1>Welcome!</h1>
+
+			<p>
+				This is the progress-tracker homepage for Toyota Scrum Tools: Wallchart. Wallchart Tool is
+				an interactive web application that tracks the progress of projects through
+				the Scrum project lifecycle. We will be periodically updating this site as we make progress
+				with the project. Check out any of the navigation links for more information!
+			</p>
+
+			<div class="center-image">
+				<img id="demo" src="screencap2.jpg"></img>
 			</div>
-			<div id="content">
 
 
 
-				<img id="Demo" class="center-image" src="screencap.jpg"></img>
 
+			<h2>Team Members:</h2>
+			<div class="row">
 
-				<h2>Team Members:</h2>
-				<div class="team-member">
+				<div class="col-sm-6 col-md-3">
+					<div class="team-member">
 					<h3>Evan Heaton</h3>
 					<a href="evan.html">
 						<img src="evan.jpg"></img>
 					</a>
 					<p>ephe223@g.uky.edu</p>
+					</div>
 				</div>
-				<div class="team-member">
+				<div class="col-sm-6 col-md-3">
+					<div class="team-member">
 					<h3>Noah Williamson</h3>
 					<a href="noah.html">
 						<img src="noah.jpg"></img>
 					</a>
 					<p>noah.williamson@uky.edu</p>
+					</div>
 				</div>
-				<div class="team-member">
+				<div class="col-sm-6 col-md-3">
+					<div class="team-member">
 					<h3>Michael Royal</h3>
 					<a href="michael.html">
 						<img src="michael.jpg"></img>
 					</a>
 					<p>michael.royal@uky.edu</p>
+					</div>
 				</div>
-				<div class="team-member">
+				<div class="col-sm-6 col-md-3">
+					<div class="team-member">
 					<h3>Laura Walker</h3>
 					<a href="laura.html">
 						<img src="laura.jpg"></img>
 					</a>
 					<p>laura.e.walker@uky.edu</p>
+					</div>
 				</div>
 			</div>
 		</div>

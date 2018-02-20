@@ -4,30 +4,86 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Introduction</title>
+  <!-- necessary bootstrap imports -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
+  <div id="title">
+    <h1>Toyota Scrum Tools: Wallchart</h1>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(59, 70, 111);">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- nav links go in here! -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="intro.html">Introduction <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="requirements.html">Requirements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="design.html">Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="screens.html">Screens</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="scenarios.html">Scenarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="testing.html">Testing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="considerations.html">Considerations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="conclusions.html">Conclusions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="installation.html">Installation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="references.html">References</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+  <br>
   <h1>Introduction</h1>
-  
-  <ul style="text-align:left;"> 
+
+  <ul style="text-align:left;">
     <li>
       <p>This project is tentatively dubbed the "Wallchart Tool" with
         the alternate subtitle "Toyota Scrum Tools." The feature being
         supplied to the customer is an interactive web application
         that tracks the progress of projects through the Scrum project
         lifecycle. This web application is to replace Toyota's current
-        method of tracking their projects' progress, which is using tape 
-        and sticky notes on the wall. Hence, "Wallchart Tool." This is 
-        also especially important for higher level executives in the 
+        method of tracking their projects' progress, which is using tape
+        and sticky notes on the wall. Hence, "Wallchart Tool." This is
+        also especially important for higher level executives in the
         company to be able to track the progress of their projects without
-        necessarily calling a full meeting with a very busy team. 
+        necessarily calling a full meeting with a very busy team.
       </p>
     </li>
     <li>
-      <p>This project aims to provide online Scrum project tracking for 
-        Toyota team members. This solution will allow for better 
-        communication between teams and management. The "wallchart tool" 
-        will also allow for deeper collaboration with remote team members. 
+      <p>This project aims to provide online Scrum project tracking for
+        Toyota team members. This solution will allow for better
+        communication between teams and management. The "wallchart tool"
+        will also allow for deeper collaboration with remote team members.
       </p>
     </li>
     <li>
@@ -35,6 +91,6 @@
       <p>Users: Toyota teams/team members, management/executives</p>
     </li>
   </ul>
-
+  </div>
 </body>
 </html>
