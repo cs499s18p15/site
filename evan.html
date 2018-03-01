@@ -4,43 +4,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Evan's Page</title>
+
+  <!-- necessary bootstrap imports -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="style.css"></link>
   <link rel="stylesheet" href="evan.css"></link>
   <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 </head>
 <body>
-  <h1>Evan's Page</h1>
-  <div class="entry">
-    <h2>Feb. 23, 2018</h2>
-    <p>I added a few design diagrams to the Design page: high level overview and JWT authentication sequence.</p>
-  </div>
-  <div class="entry">
-    <h2>Feb. 20, 2018</h2>
-    <p>This week I updated the progress-tracker website to use bootstrap 4 (well, most of the pages except for this one). This should make the site a lot cleaner, and mobile responsive!</p>
-  </div>
-  <div class="entry">
-    <h2>Feb. 14, 2018</h2>
-    <p>The app now loads the position of projects from the database on startup. Additionally, moving projects from column to column will send requests to the backend and update the project positions accordingly in MongoDB. This means that the location of projects is persistent across all users, and on page refresh. Note: real-time updating has yet to be implemented.</p>
-  </div>
-  <div class="entry">
-    <h2>Feb. 13, 2018</h2>
-    <p>Implemented the use of JWTs for user authentication. The server is capable of signing JWTs, which are sent to users upon login. The user will then attach the JWT with any future requests he makes to the server. The server can then decode the token to know exactly who made the given request, whether they have appropriate permissions, etc.</p>
-  </div>
-  <div class="entry">
-    <h2>Feb. 10, 2018</h2>
-    <p>Added vue-router to the project. This will allow us to host multiple pages as self-contained Vue components.</p>
-  </div>
-  <div class="entry">
-    <h2>Feb. 5, 2018</h2>
-    <p>Now using vue-draggable library for drag&drop functionality on project sticky notes. Unfortunately, I'm forced to set up the data in a way that will make it hard to send discrete /move events to the backend. Need to do more research on how to get proper event data.</p>
-  </div>
-  <div class="entry">
-    <h2>Feb. 4, 2018</h2>
-    <p>Added mongodb into the mix. We can now write routes in the backend that query from a database.</p>
-  </div>
-  <div class="entry">
-    <h2>Jan. 31, 2018</h2>
-    <p>Set up the project using vue-cli. We now have a functional Vue.js frontend and a node.js & express backend.</p>
+  <div class="container">
+    <h1 style="text-align: center">Evan's Page</h1>
+    <div class="entry">
+      <h2>Feb. 27, 2018</h2>
+      <p>Today our team went on-site to Toyota to demonstrate our progress so far, and receive feedback from the people that would actually be using our application. We got some good ideas for features to add to our project, such as the ability to filter projects shown on the wallchart by team, and various UI changes. Most of the Toyota managers and higher ups seemed impressed with the real-time functionality of the wallchart tool as they dragged projects from column to column.</p>
+      <p>Unfortunately, it was brought to our attention that Toyota's database team apparently does not support unstructured database systems, such as mongoDB. They requested that we modify our program to work with their current database system: MS SQL 2014. However, without any way to launch a MS SQL server for development purposes, I think we'll have to go with something else. Right now, we are looking at migrating to MySQL. That means that just about every route we've written for our node server will have to be rewritten, which will make our feature development process come to a grinding halt. MongoDB's lack of schema was keeping us agile early in development, but now we'll have to start designing a MySQL schema and keep it up to date, which will surely eat into our feature development speed.</p>
+    </div>
+    <div class="entry">
+      <h2>Feb. 23, 2018</h2>
+      <p>I added a few design diagrams to the Design page: high level overview and JWT authentication sequence.</p>
+    </div>
+    <div class="entry">
+      <h2>Feb. 20, 2018</h2>
+      <p>This week I updated the progress-tracker website to use bootstrap 4 (well, most of the pages except for this one). This should make the site a lot cleaner, and mobile responsive!</p>
+    </div>
+    <div class="entry">
+      <h2>Feb. 14, 2018</h2>
+      <p>The app now loads the position of projects from the database on startup. Additionally, moving projects from column to column will send requests to the backend and update the project positions accordingly in MongoDB. This means that the location of projects is persistent across all users, and on page refresh. Note: real-time updating has yet to be implemented.</p>
+    </div>
+    <div class="entry">
+      <h2>Feb. 13, 2018</h2>
+      <p>Implemented the use of JWTs for user authentication. The server is capable of signing JWTs, which are sent to users upon login. The user will then attach the JWT with any future requests he makes to the server. The server can then decode the token to know exactly who made the given request, whether they have appropriate permissions, etc.</p>
+    </div>
+    <div class="entry">
+      <h2>Feb. 10, 2018</h2>
+      <p>Added vue-router to the project. This will allow us to host multiple pages as self-contained Vue components.</p>
+    </div>
+    <div class="entry">
+      <h2>Feb. 5, 2018</h2>
+      <p>Now using vue-draggable library for drag&drop functionality on project sticky notes. Unfortunately, I'm forced to set up the data in a way that will make it hard to send discrete /move events to the backend. Need to do more research on how to get proper event data.</p>
+    </div>
+    <div class="entry">
+      <h2>Feb. 4, 2018</h2>
+      <p>Added mongodb into the mix. We can now write routes in the backend that query from a database.</p>
+    </div>
+    <div class="entry">
+      <h2>Jan. 31, 2018</h2>
+      <p>Set up the project using vue-cli. We now have a functional Vue.js frontend and a node.js & express backend.</p>
+    </div>
   </div>
 </body>
 </html>
