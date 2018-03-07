@@ -22,6 +22,7 @@ h2 {
 .team-member {
   text-align: center;
   background-color: rgb(226, 226, 226);
+  border-radius: 15px;
 }
 .team-member h3 {
   font-size: 1em;
