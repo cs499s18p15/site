@@ -16,7 +16,23 @@
   <div class="container">
   <h1>Noah's Weekly Updates</h1><br>
    
-  <h2>UPDATE: Mar. 11, 2018</h2>
+  <h2>UPDATE: Mar. 24, 2018</h2>
+  <p>Last week was spring break, so we did not work on the project. This past
+    week we continued MySQL migration of the back-end of the project. I changed
+    the project update route to now update projects' information in the SQL 
+    database using a SQL query (as oppposed to MongoDB like it used to be). 
+    I also modified the routes to authenticate users and delete users to also 
+    now use MySQL by performing SQL queries. These basic yet crucial functionalities 
+    will now work with our new tech stack. One important thing I had to learn was how 
+    to use the MySQL package with Node and Express in order to prevent SQL injection. 
+    For me, this took a bit to get used to and to understand, but it is no doubt 
+    an important precaution to take. The package lets you use an array of 
+    parameters to hold the information to be updated so the SQL query in 
+    the code contains a '?' character in place of the actual project/user 
+    information. This proved to shorten the query's string length and also 
+    made the code more readable.</p>
+  <br>
+  <h2>Mar. 11, 2018</h2>
   <p>This past week was midterms, so not a whole lot got accomplished for the 
     project. Toyota confirmed that we could use MySQL for the database so we 
     all have started trying to find ways to use our existing source code but 
