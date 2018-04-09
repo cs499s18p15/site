@@ -15,7 +15,30 @@
 <body>
   <div class="container">
   <h1>Noah's Weekly Updates</h1><br>
-  <h2>UPDATE: Apr. 1, 2018</h2>
+    
+  <h2>UPDATE: Apr. 8, 2018</h2>
+  <p>This past week I finished the back-end route work for the password reset
+    feature. This involved generating a key that was sent to the requesting
+    user via email. This key was added to a database along with the user's 
+    ID number and email, and a timestamp to ensure the key's validity for no
+    more than 24 hours. This will allow the back-end to verify that the key 
+    exists and is valid and therefore allowing the password to be reset in
+    the database. In addition to this, I wrote the SQL to create the table
+    called 'reset' to store the aforementioned information. A second bit of
+    functionality I started and finished this week was the 'project complete'
+    feature. This allows team members to mark an existing project as complete,
+    which effectively removes the project from the wallchart display, however
+    the project remains in the database. This involved adding a column called
+    'complete' to the projects table of the database which stores a value of 
+    type BOOLEAN to indicate whether the project has been completed or not and 
+    also adding a route to update that attribute in the MySQL projects table. 
+    This means when a user presses the complete button in the project inspector, 
+    the project will "disappear" from the wallchart display. In addition, I changed
+    the 'get' route in projects.js to ensure it only fetched projects with 
+    complete marked as FALSE. I also wrote a route to fetch all completed projects, 
+    which is unused at this point from the front-end, but will be coming shortly.</p>
+  <br>
+  <h2>Apr. 1, 2018</h2>
   <p>This past week I added many test cases/scenarios to the Testing section
     of this progress site. The majority of our tests will be user driven since
     this is a very user driven project. The other big thing will be making sure
