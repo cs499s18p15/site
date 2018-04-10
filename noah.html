@@ -15,8 +15,52 @@
 <body>
   <div class="container">
   <h1>Noah's Weekly Updates</h1><br>
-   
-  <h2>UPDATE: Mar. 24, 2018</h2>
+    
+  <h2>UPDATE: Apr. 8, 2018</h2>
+  <p>This past week I finished the back-end route work for the password reset
+    feature. This involved generating a key that was sent to the requesting
+    user via email. This key was added to a database along with the user's 
+    ID number and email, and a timestamp to ensure the key's validity for no
+    more than 24 hours. This will allow the back-end to verify that the key 
+    exists and is valid and therefore allowing the password to be reset in
+    the database. In addition to this, I wrote the SQL to create the table
+    called 'reset' to store the aforementioned information. A second bit of
+    functionality I started and finished this week was the 'project complete'
+    feature. This allows team members to mark an existing project as complete,
+    which effectively removes the project from the wallchart display, however
+    the project remains in the database. This involved adding a column called
+    'complete' to the projects table of the database which stores a value of 
+    type BOOLEAN to indicate whether the project has been completed or not and 
+    also adding a route to update that attribute in the MySQL projects table. 
+    This means when a user presses the complete button in the project inspector, 
+    the project will "disappear" from the wallchart display. In addition, I changed
+    the 'get' route in projects.js to ensure it only fetched projects with 
+    complete marked as FALSE. I also wrote a route to fetch all completed projects, 
+    which is unused at this point from the front-end, but will be coming shortly.</p>
+  <br>
+  <h2>Apr. 1, 2018</h2>
+  <p>This past week I added many test cases/scenarios to the Testing section
+    of this progress site. The majority of our tests will be user driven since
+    this is a very user driven project. The other big thing will be making sure
+    all of our functionality properly updates and pulls from the MySQL database.
+    We need to thoroughly test this since we have just finished migrating from 
+    MongoDB to MySQL. This week, I also worked on the new user route to now
+    send the registering user a confirmation email to let them know the signup
+    was successful and so they know they must have an admin to approve and 
+    authenticate them. I also started on two new routes for the users for the 
+    reset password functionality. The first is called after the user clicks on
+    the forgot password link and then generates a key and sends the user an 
+    email containing the key. They are redirected to a page asking for the key
+    and for a new password and to confirm the new password. The second route
+    I worked on this week is called after the submit button is pressed on this
+    new page. This route checks that the password reset key is valid and was
+    generated within the past 24 hours, if so, then it updates the password in 
+    the user table and removes the row containing the key from the table. This
+    will allow the user to log in to Wallchart with their new password. This
+    second route is still incomplete. I will need to add a new table called reset 
+    to the MySQL database in order for these two new routes to work properly.</p>
+  <br>
+  <h2>Mar. 24, 2018</h2>
   <p>Last week was spring break, so we did not work on the project. This past
     week we continued MySQL migration of the back-end of the project. I changed
     the project update route to now update projects' information in the SQL 
