@@ -63,10 +63,21 @@
 			</div>
 		</nav>
 
-		<div class="container">
-      <br>
-      <h1>Considerations</h1>
-
+	<div class="container">
+		<br>
+    	<h1>Design Considerations</h1>
+		
+		<h2>The MySQL Migration</h2>
+		<p>
+			As you may have seen documented elsewhere on the site, about a third of the way through our project we were told that our database implementation was not supported by Toyota.
+			We had implemented our database component as an unstructured, No-SQL database (MongoDB). Unfortunately Toyota does not use any No-SQL databases at the moment, so they would have trouble finding someone to support it.
+			Our project manager, Troy, told us that in order for wallchart tool to be used internally, we had to migrate to a structured database system, such as MySQL. So that's what we did!
+			The overall migration took about two weeks, but all things considered it was for the best.
+		</p>
+		<h2>Limitations</h2>
+		<p>
+			As much as we'd like to think wallchart tool has no bugs or restrictions, it definitely has a few limitations.
+		</p>
     </div>
 
 </body>
