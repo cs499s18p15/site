@@ -70,13 +70,14 @@
       <br>
       <h1>Installation</h1>
 
-      <p>To start, you will need to have obtained the source code files via GitHub. Additionally, you will need to install
-      have MySQL, Node.js, and NPM (Node Package Manager) installed.</p>
+      <p>To start, you will need to have obtained the source code files via the <a href="https://github.com/cs499s18p15/wallchart">GitHub repo</a>. Additionally, you will need to
+      have MySQL (via XAMPP, Homebrew or some other means), Node.js, and NPM (Node Package Manager) installed.
+      These links are provided in the <a href="references.html">References</a> tab.</p>
 
-      <p>Next, you will use the provided SQL file to set up the tables in the database</p>
+      <p>Next, you will use the provided <code>make_wallchartDB_SQL.sql</code> file to set up the tables in the database</p>
 
-      <p>Now install dependencies by running the command <kbd><kbd>npm</kbd> <kbd>install</kbd> </kbd> </p>
-      <p>Start up MySQL database on port 3307</p>
+      <p>Now install the npm dependencies by running the command <kbd><kbd>npm</kbd> <kbd>install</kbd> </kbd> </p>
+      <p>Start up MySQL database configured to serve on port 3307 (using XAMPP or for Mac w/ Homebrew MySQL <kbd><kbd>brew</kbd> <kbd>services</kbd> <kbd>start</kbd> <kbd>mysql</kbd></kbd> )</p>
       <p>Create ENV file by running: <kbd> <kbd>cp</kbd> <kbd>.env.sample</kbd> <kbd>.env</kbd> </kbd> &nbsp;then input
       your specific information for the sensitive variables</p>
       <p>To serve at localhost 4200, run <kbd> <kbd>npm</kbd> <kbd>run</kbd> <kbd>dev</kbd> </kbd> </p>
