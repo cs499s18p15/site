@@ -77,9 +77,27 @@
 			Our project manager, Troy, told us that in order for wallchart tool to be used internally, we had to migrate to a structured database system, such as MySQL. So that's what we did!
 			The overall migration took about two weeks, but all things considered it was for the best.
 		</p>
-		<h2>Limitations</h2>
+		<h2>Known Bugs/Limitations</h2>
 		<p>
-			As much as we'd like to think wallchart tool has no bugs or restrictions, it definitely has a few limitations.
+			As much as we'd like to think wallchart tool has no bugs or restrictions, it definitely has a few limitations. A few known limitations are:
+			<ul>
+				<li>A user will not receive real-time updates from another client logged into the same account.</li>
+				<li>Sometimes, when moving projects, there's a little jitter back and forth between columns. Not exactly sure when this started happening but probably has something to do with sockets.</li>
+				<li>Clients can fall out of sync with a bad internet connection. In these instances, refresh the page to reset.</li>
+				<li>Words are sometimes cut off the end of sticky notes if titles are too long.</li>
+				<li>'X' to delete comments appears for all users (but should only appear for admins). Luckily, only admins can actually delete comments.</li>
+				<li>And more... for you to find later!</li>
+			</ul>
+		</p>
+		<h2>Areas of Questionable Security</h2>
+		<p>
+			We're not perfect. There are a few security vulnerabilities in wallchart tool, listed here:
+			<ul>
+				<li>Password hashing function should be reevaluated every so often.</li>
+				<li>Plaintext passwords are sent from client to server as part of a post body. Not sure how to change this but it seems dangerous.</li>
+				<li>New users are granted read access automatically (as specified by customer). If you keep sensitive information in wallchart tool this would not be recommended.</li>
+				<li>Password reset is done by key only. Malicious attackers could brute force the reset by trying many different reset keys.</li>
+			</ul>
 		</p>
     </div>
 
